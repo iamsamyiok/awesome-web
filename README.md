@@ -96,6 +96,15 @@ Markdown 编辑器 + 内置 AI 助手侧栏（OpenAI 兼容 API 自行配置）�
 
 同上，改用自定义 OpenAI 兼容 API（Base URL + 模型名 + Key），Key 本地加密存储。
 
+### [Agents Chat Portable - pi 多智能体群聊（Windows 便携版）](https://github.com/iamsamyiok/awesome-web/releases/tag/agents-chat-v1.0.0)
+
+免安装的多智能体群聊程序（解压即用，内置 Node 运行时，46MB）。所有智能体统一使用 [pi 内核](https://github.com/badlogic/pi-mono)，具备文件读写、命令执行、联网检索能力；填入任意 OpenAI 兼容 API（Base URL + 模型名 + Key）即可启用。
+
+- 群聊：微信风格界面，`@智能体ID` 点名，多智能体流水线协作
+- 主智能体编排：规划 → 派活 → 验收 → 不合格带反馈打回重做 → 汇总报告
+- 任务队列：粘贴清单自动提取任务，按时间先后排序逐个执行，各任务上下文完全独立
+- 3 个内置智能体可多开（规划师 / 工程师 / 研究员），各自独立人设与模型
+
 ---
 
 ## 效率工具
