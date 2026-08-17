@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awesome Web Apps - 精选 Web 应用合集</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f6f8fa; color: #1f2328; line-height: 1.6;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 48px 24px 80px; }
+  .hero { text-align: center; padding: 24px 0 8px; }
+  .hero h1 { font-size: 38px; font-weight: 700; letter-spacing: -1px; }
+  .hero p.tag { color: #57606a; font-size: 16.5px; margin-top: 8px; }
+  .badges { display: flex; gap: 10px; justify-content: center; margin: 20px 0 8px; flex-wrap: wrap; }
+  .badge {
+    background: #fff; border: 1px solid #d0d7de; border-radius: 20px;
+    padding: 4px 14px; font-size: 13px; color: #424a53;
+  }
+  .badge b { color: #0969da; }
+  h2.cat {
+    font-size: 21px; margin: 44px 0 6px; padding-bottom: 8px;
+    border-bottom: 1px solid #d8dee4;
+  }
+  h2.cat .n { color: #8b949e; font-size: 14px; font-weight: 400; margin-left: 8px; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
+  @media (max-width: 700px) { .cards { grid-template-columns: 1fr; } }
+  .card {
+    background: #fff; border: 1px solid #d8dee4; border-radius: 10px;
+    padding: 20px 22px; display: flex; flex-direction: column;
+    transition: box-shadow .15s, border-color .15s;
+  }
+  .card:hover { box-shadow: 0 4px 16px rgba(31,35,40,.10); border-color: #b6c2cf; }
+  .card h3 { font-size: 16.5px; margin-bottom: 8px; }
+  .card h3 a { color: #1f2328; text-decoration: none; }
+  .card h3 a:hover { color: #0969da; }
+  .card p.desc { font-size: 13.5px; color: #57606a; flex: 1; }
+  .card ul { margin: 10px 0 4px; padding-left: 0; list-style: none; }
+  .card ul li {
+    font-size: 13px; color: #374151; padding-left: 18px; position: relative; margin: 3px 0;
+  }
+  .card ul li::before { content: "\2022"; position: absolute; left: 6px; color: #1a7f37; }
+  .tags { margin-top: 12px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag {
+    font-size: 11.5px; color: #0969da; background: #ddf4ff;
+    border: 1px solid #b6e3ff; border-radius: 10px; padding: 1px 9px;
+  }
+  .tag.gray { color: #57606a; background: #f6f8fa; border-color: #d0d7de; }
+  .visit {
+    display: inline-block; margin-top: 14px; font-size: 13.5px; font-weight: 600;
+    color: #2f6feb; text-decoration: none;
+  }
+  .visit:hover { text-decoration: underline; }
+  footer { text-align: center; color: #6e7781; font-size: 13px; margin-top: 56px; }
+  footer a { color: #0969da; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>Awesome Web Apps</h1>
+    <p class="tag">精选自部署 Web 应用合集 —— 浏览器即开即用，数据留在本地</p>
+    <div class="badges">
+      <span class="badge"><b>19</b> 个应用</span>
+      <span class="badge"><b>5</b> 大分类</span>
+      <span class="badge">P2P · 无需后端</span>
+      <span class="badge">持续更新</span>
+    </div>
+  </div>
+
+  <h2 class="cat">工程绘图<span class="n">CAD / SVG</span></h2>
+  <div class="cards">
+    <div class="card">
+      <h3><a href="https://bd2c9a77.pinme.dev" target="_blank">Mini-CAD 在线绘图（优化版）</a></h3>
+      <p class="desc">轻量在线 CAD，支持 DXF 导出、块管理、极轴追踪与命令行操作。</p>
+      <ul>
+        <li>绘图 + 编辑工具 20 余种，阵列 / 修剪 / 圆角倒角齐全</li>
+        <li>图层、对象捕捉、标注（箭头样式 / RΦ / 比例）可配</li>
+        <li>导出 PNG / DXF，可直接打印</li>
+      </ul>
+      <div class="tags"><span class="tag">DXF</span><span class="tag">图层</span><span class="tag">命令行</span></div>
+      <a class="visit" href="https://bd2c9a77.pinme.dev" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://f9ad69ee.pinme.dev/" target="_blank">简易 CAD - SVG 编辑器（初始版）</a></h3>
+      <p class="desc">Mini-CAD 前身，纯 SVG 绘图引擎：直线 / 圆弧 / 样条 / 标注 / 测量一应俱全，命令行驱动，适合快速绘制平面图形。</p>
+      <div class="tags"><span class="tag">SVG</span><span class="tag">轻量</span></div>
+      <a class="visit" href="https://f9ad69ee.pinme.dev/" target="_blank">打开应用 →</a>
+    </div>
+  </div>
+
+  <h2 class="cat">Markdown 工具<span class="n">编辑 / 转换</span></h2>
+  <div class="cards">
+    <div class="card">
+      <h3><a href="https://iamsamyiok.github.io/MD2Card/" target="_blank">MD2Card</a></h3>
+      <p class="desc">Markdown 转图片卡片工具（本地版）：无云端、无 API Key、全开源，排版数据不出浏览器。</p>
+      <div class="tags"><span class="tag">本地优先</span><span class="tag">开源</span></div>
+      <a class="visit" href="https://iamsamyiok.github.io/MD2Card/" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://d84738a1.pinme.dev" target="_blank">MD Git Editor</a></h3>
+      <p class="desc">带版本管理的在线 Markdown 编辑器，把 git 分支能力装进浏览器。</p>
+      <ul>
+        <li>新建分支、分支图可视化、分支对比与合并</li>
+        <li>提交存档、一键回退、查看差异</li>
+        <li>导出 MD / HTML / TXT / PDF</li>
+      </ul>
+      <div class="tags"><span class="tag">版本管理</span><span class="tag">分支</span></div>
+      <a class="visit" href="https://d84738a1.pinme.dev" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://8ecc051a.pinme.dev" target="_blank">极简 Markdown 工作站（AI 聊天版）</a></h3>
+      <p class="desc">Markdown 编辑器 + AI 助手侧栏（OpenAI 兼容 API 自行配置）。</p>
+      <ul>
+        <li>资源管理器、本地文件与自动保存</li>
+        <li>发送选中 / 插入到文档、荧光笔高亮</li>
+        <li>内置思维导图（8 主题），导出六种格式</li>
+      </ul>
+      <div class="tags"><span class="tag">AI 助手</span><span class="tag">思维导图</span></div>
+      <a class="visit" href="https://8ecc051a.pinme.dev" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://c8ffd28b.pinme.dev/" target="_blank">极简 Markdown 工作站（备份增强版）</a></h3>
+      <p class="desc">在 AI 聊天版基础上新增：数据存储到本地文件夹（清浏览器数据不丢失）+ 按间隔自动备份到指定目录。</p>
+      <div class="tags"><span class="tag">自动备份</span><span class="tag">AI 助手</span></div>
+      <a class="visit" href="https://c8ffd28b.pinme.dev/" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://2559ee3c.pinit.eth.limo" target="_blank">Private Markdown Editor</a></h3>
+      <p class="desc">左右分栏实时预览编辑器：四种主题（暗夜 / 羊皮纸 / 护眼绿…）+ 自定义背景色，界面复古精致。</p>
+      <div class="tags"><span class="tag">分栏预览</span><span class="tag">多主题</span></div>
+      <a class="visit" href="https://2559ee3c.pinit.eth.limo" target="_blank">打开应用 →</a>
+    </div>
+  </div>
+
+  <h2 class="cat">AI 与工作流<span class="n">多智能体 / 迭代 / 转图</span></h2>
+  <div class="cards">
+    <div class="card">
+      <h3><a href="https://f31fb197.pinit.eth.limo" target="_blank">SMAW 高级多智能体工作流</a></h3>
+      <p class="desc">多智能体协同工作流引擎，可视化编排复杂 AI 任务。</p>
+      <ul>
+        <li>串行 / 并行执行、断点等待用户输入</li>
+        <li>Skill 能力扩展系统 + 16 个智能体模板</li>
+        <li>多 LLM 支持，PDF / Word / Excel 文件解析与 OCR</li>
+      </ul>
+      <div class="tags"><span class="tag">Skill</span><span class="tag">多智能体</span><span class="tag">编排</span></div>
+      <a class="visit" href="https://f31fb197.pinit.eth.limo" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://cca441e3.pinme.dev/" target="_blank">LLM 迭代改进系统</a></h3>
+      <p class="desc">设定目标与评价标准，让 LLM 自动多轮迭代直到达到目标分数或次数。</p>
+      <ul>
+        <li>评价标准可 AI 生成 / AI 优化</li>
+        <li>终止条件：次数 / 目标分数 / 先到者</li>
+        <li>评分趋势与五视图对比（差异 / 维度 / 改进率）</li>
+      </ul>
+      <div class="tags"><span class="tag">自我迭代</span><span class="tag">评分</span></div>
+      <a class="visit" href="https://cca441e3.pinme.dev/" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://48bb64c3.pinit.eth.limo" target="_blank">Mind Map Wizard（OpenRouter 版）</a></h3>
+      <p class="desc">文本转思维导图，本地运行、使用自己的 OpenRouter Key。联网搜索补充、长按节点 AI 摘要，导出 JPG / SVG / PDF / MD。</p>
+      <div class="tags"><span class="tag">OpenRouter</span><span class="tag">文本转图</span></div>
+      <a class="visit" href="https://48bb64c3.pinit.eth.limo" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://be9b869c.pinit.eth.limo" target="_blank">Mind Map Wizard（自定义 LLM 版）</a></h3>
+      <p class="desc">同上，改用自定义 OpenAI 兼容 API（Base URL + 模型 + Key），Key 本地加密存储。</p>
+      <div class="tags"><span class="tag">自定义 API</span><span class="tag">文本转图</span></div>
+      <a class="visit" href="https://be9b869c.pinit.eth.limo" target="_blank">打开应用 →</a>
+    </div>
+  </div>
+
+  <h2 class="cat">效率工具<span class="n">运动 / 绘图 / 抽奖 / 录屏</span></h2>
+  <div class="cards">
+    <div class="card">
+      <h3><a href="https://5963bed3.pinme.dev/" target="_blank">RunPulse 跑步系统</a></h3>
+      <p class="desc">功能完备的跑步辅助应用。</p>
+      <ul>
+        <li>GPS 轨迹、配速、海拔、步频、卡路里全程记录</li>
+        <li>训练计划库、目标管理、节拍器、语音播报</li>
+        <li>配速趋势、周月跑量、成就徽章、体重 BMI</li>
+      </ul>
+      <div class="tags"><span class="tag">GPS</span><span class="tag">训练计划</span></div>
+      <a class="visit" href="https://5963bed3.pinme.dev/" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://de4a54ad.pinit.eth.limo" target="_blank">思维导图编辑器</a></h3>
+      <p class="desc">简单易用的在线思维导图：16 种主题、自动整理布局、拖拽调整，截图复制到剪贴板，支持 PNG / JSON / MD 导入导出。</p>
+      <div class="tags"><span class="tag">16 主题</span><span class="tag">零配置</span></div>
+      <a class="visit" href="https://de4a54ad.pinit.eth.limo" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://9dae45c8.pinit.eth.limo/" target="_blank">鸿运当头 - 在线抽奖</a></h3>
+      <p class="desc">晚会 / 年会抽奖工具：名单或数字范围、一次多人、滚动时长可调、有 / 无放回模式、中奖红榜，空格键开始。</p>
+      <div class="tags"><span class="tag">年会</span><span class="tag">红榜</span></div>
+      <a class="visit" href="https://9dae45c8.pinit.eth.limo/" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://1d0b1590.pinit.eth.limo/" target="_blank">在线录屏</a></h3>
+      <p class="desc">浏览器录屏为视频，自动加载 FFmpeg（wasm）编码，可选录入麦克风，无需安装任何软件。</p>
+      <div class="tags"><span class="tag">FFmpeg</span><span class="tag">免安装</span></div>
+      <a class="visit" href="https://1d0b1590.pinit.eth.limo/" target="_blank">打开应用 →</a>
+    </div>
+  </div>
+
+  <h2 class="cat">通信与文件传输<span class="n">P2P · 设备直连</span></h2>
+  <div class="cards">
+    <div class="card">
+      <h3><a href="https://e4e638bf.pinit.eth.limo" target="_blank">P2P 局域网极速传（最优版）</a></h3>
+      <p class="desc">同一 WiFi 传大文件，摆脱微信登录与限速。断开信令后完全隐身；StreamSaver 大文件直写硬盘、内存零压力。</p>
+      <div class="tags"><span class="tag">大文件</span><span class="tag">直写硬盘</span><span class="tag gray">最优版</span></div>
+      <a class="visit" href="https://e4e638bf.pinit.eth.limo" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://4f2780ac.pinit.eth.limo" target="_blank">局域网工作室</a></h3>
+      <p class="desc">局域网聊天 + 文件传输一体（WebRTC P2P）：成员管理、表情、文件收发、新消息提醒——解决局域网微信传大文件慢的痛点。</p>
+      <div class="tags"><span class="tag">聊天+传输</span><span class="tag">WebRTC</span></div>
+      <a class="visit" href="https://4f2780ac.pinit.eth.limo" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://cd774157.pinit.eth.limo" target="_blank">P2P 私密通信</a></h3>
+      <p class="desc">可用于加密通信的 P2P 聊天室：房间制 + 隐身模式（隐身后从信令侧不可见），在线列表区分安全状态。</p>
+      <div class="tags"><span class="tag">加密通信</span><span class="tag">隐身</span></div>
+      <a class="visit" href="https://cd774157.pinit.eth.limo" target="_blank">打开应用 →</a>
+    </div>
+    <div class="card">
+      <h3><a href="https://5eb22439.pinit.eth.limo" target="_blank">P2P 平行世界</a></h3>
+      <p class="desc">在互联网中建立 P2P 链接传输文件（跨网络，非仅局域网）。明网（公开）/ 暗网（隔离）双模式，可全员隐身。</p>
+      <div class="tags"><span class="tag">跨网络</span><span class="tag">明暗双模式</span></div>
+      <a class="visit" href="https://5eb22439.pinit.eth.limo" target="_blank">打开应用 →</a>
+    </div>
+  </div>
+
+  <footer>
+    Awesome Web Apps · 各项目版权归各自作者 ·
+    <a href="https://github.com/iamsamyiok/awesome-web">GitHub 仓库</a>
+  </footer>
+</div>
+</body>
+</html>
